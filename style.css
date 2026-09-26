@@ -178,6 +178,11 @@ nav,
     color: #242424;
 }
 
+.dark-theme .mail__btn .fa-solid,
+.dark-theme .mail__btn .fa-envelope {
+    color: #242424 !important;
+}
+
 /* 
 Landing Page  
 */
@@ -226,12 +231,13 @@ Landing Page
     border: none;
     background-color: #242424;
     color: white;
-    position: absolute;
+    position: fixed;
     bottom: 32px;
     right: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 50;
 }
 
 .scroll {
@@ -286,8 +292,8 @@ nav {
 
 #personal-logo {
     filter: invert(1);
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
 }
 
 .nav__link--list {
@@ -492,6 +498,14 @@ font-size: 80px;
 /* 
 PROJECTS SECTION
 */
+.project {
+    margin-bottom: 135px;
+}
+
+.project:last-child {
+    margin-bottom: 40px;
+}
+
 .section__title {
     text-align: center;
     font-size: 48px;
@@ -511,7 +525,7 @@ PROJECTS SECTION
 .project__wrapper {
     position: relative;
     border-radius: 20px;
-    box-shadow: o 20px 80px 0 rgb(0, 0, 0.45);
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
     overflow: hidden;
 }
 
