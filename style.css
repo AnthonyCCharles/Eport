@@ -391,6 +391,11 @@ MODAL
     transform: scale(.9);
 }
 
+.modal__language--icon {
+    font-size: 56px;
+    padding: 16px 0 24px;
+}
+
 .modal__language--img {
     width: 100%;
     padding: 16px;
